@@ -1,0 +1,10 @@
+.app-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+
+  /*Single Column layout for phone - Scroll*/
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}

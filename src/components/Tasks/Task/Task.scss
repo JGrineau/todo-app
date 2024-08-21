@@ -1,0 +1,41 @@
+.removeButton {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #f60000;
+  border: gray;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.removeButton:hover {
+  color: #fff;
+  background-color: #f60000;
+}
+.changeButton {
+  margin-right: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #31a6b6;
+  border: gray;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.changeButton:hover {
+  color: #fff;
+  background-color: #15d3ec;
+}
+.task-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.completed {
+  color: green;
+  font-weight: bold;
+}
+.open {
+  color: #5e5e5e;
+}
