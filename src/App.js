@@ -1,4 +1,4 @@
-import { React, useEffect, useState } from "react";
+import { React, useState } from "react";
 import uuid from "react-uuid";
 
 import Form from "./components/Form/Form";
@@ -17,7 +17,7 @@ import ChangingStatus from "./components/HelpPage/ChangingStatus";
 import "./App.scss";
 
 import { Routes, Route } from "react-router-dom";
-import * as database from './database';
+// import * as database from './database';
 // import {load, save, update} from './database';
 
 
@@ -78,28 +78,28 @@ function App() {
 
 
 
-  useEffect( () => {
+  // useEffect( () => {
   
-    //load database
-    // database.load();
+  //   //load database
+  //   // database.load();
 
-    // const result = database.load();
-    // console.log('Loading Data: ', result);
+  //   // const result = database.load();
+  //   // console.log('Loading Data: ', result);
 
-    // database.load()
-    // .then(( result ) => {
-    //   console.log('Loaded Result: ',result);
-    // })
-    // .catch(( error ) => {
-    //   console.log('Load Error: ', error);
-    // });
+  //   // database.load()
+  //   // .then(( result ) => {
+  //   //   console.log('Loaded Result: ',result);
+  //   // })
+  //   // .catch(( error ) => {
+  //   //   console.log('Load Error: ', error);
+  //   // });
 
-    (async () => {
-      const data = await database.load();
-      console.log('Loaded Data: ', data)
-    })();
+  //   (async () => {
+  //     const data = await database.load();
+  //     console.log('Loaded Data: ', data)
+  //   })();
 
-  }, []);
+  // }, []);
   return (
     <>
       <Header />

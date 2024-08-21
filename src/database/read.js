@@ -1,31 +1,31 @@
-import { collection, getDocs } from 'firebase/firestore';
-import { db } from './config';
+// import { collection, getDocs } from 'firebase/firestore';
+// import { db } from './config';
 
 
-export async function load() {
+// export async function load() {
 
-    try { 
+//     try { 
 
-    const querySnapshot = await getDocs(collection(db, "Tasks"));
+//     const querySnapshot = await getDocs(collection(db, "Tasks"));
 
-    const data = [];
+//     const data = [];
 
-        querySnapshot.forEach((doc) => {
-        data.push({
-            ...doc.data(),
-            id: doc.id
-        });
-    });
+//         querySnapshot.forEach((doc) => {
+//         data.push({
+//             ...doc.data(),
+//             id: doc.id
+//         });
+//     });
 
-    return data;
-}
-catch (error) {
+//     return data;
+// }
+// catch (error) {
     
-    throw  'Failed to load the database';
-}
-}
+//     throw  'Failed to load the database';
+// }
+// }
 
 
-export function loadById(id){
-    console.log('Load ID: ', id);
-}
+// export function loadById(id){
+//     console.log('Load ID: ', id);
+// }
